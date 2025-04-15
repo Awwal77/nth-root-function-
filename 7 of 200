@@ -1,0 +1,20 @@
+def nth_root(value, n):
+    """
+    Returns the nth root of a number.
+    
+    Parameters:
+    value (float): The number to find the root of.
+    n (int): The degree of the root.
+    
+    Returns:
+    float: The nth root of the value.
+    """
+    if n == 0:
+        raise ValueError("Cannot compute zeroth root.")
+    return value ** (1/n)
+
+# Example usage
+if __name__ == "__main__":
+    value = 81
+    n = 4
+    print(f"{n}th root of {value} is: {nth_root(value, n)}")
